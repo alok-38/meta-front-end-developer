@@ -1,4 +1,4 @@
-![Meta Logo]("https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=2&h=45")
+![Meta Logo](https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=2&h=45)
 
 # Meta Front-End Developer Professional Certificate
 
