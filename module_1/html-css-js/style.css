@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    height: 20vh;
+    color: #ffffff;
+    font-size: 22vh;
+    font-family: sans-serif;
+    line-height: 20.4vh;
+    display: flex;
+}
+
+section {
+    display: flex;
+}
