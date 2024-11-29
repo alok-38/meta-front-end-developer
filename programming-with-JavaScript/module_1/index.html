@@ -9,16 +9,31 @@
 
 <body>
     <script>
-        var petDog = "Rex";
-        var petCat = "Pepper";
-        console.log(petCat + "," + " " + petDog);
-        console.log("My pet names are " + petCat + " " + "and"  + " " + petDog);
-        var catSound = "purr";
-        var dogSound = "woof";
-        console.log("My pet cat says " + catSound);
-        console.log("My pet dog says " + dogSound);
-        var catSound = "meow";
-        console.log("Naa...My " + petCat +  " " + "says " + catSound);
+        // logical AND operator &&
+        var currentTime = 10;
+        console.log(currentTime > 9 && currentTime < 17);
+        // Ternary operator
+        let age = 18;
+        let canVote = age >= 18 ? "Yes" : "No";
+        console.log(canVote);
+        // Core Concepts of Boolean Logic
+        let a = true;
+        let b = false;
+        console.log(a && b);
+        console.log(a || b);
+        console.log(!a, !b);
+        // Truthy and Falsy
+        let value1 = "";
+        let value2 = "Hello";
+        console.log(Boolean(value1));
+        console.log(Boolean(value2));
+        // Conditional statements
+        let isRaining = true;
+        if (isRaining) {
+            console.log("Take an umbrella");
+        } else {
+            console.log("Enjoy the sunshine");
+        }
     </script>
 </body>
 
