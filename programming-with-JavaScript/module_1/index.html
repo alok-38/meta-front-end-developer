@@ -9,31 +9,47 @@
 
 <body>
     <script>
-        // logical AND operator &&
-        var currentTime = 10;
-        console.log(currentTime > 9 && currentTime < 17);
-        // Ternary operator
-        let age = 18;
-        let canVote = age >= 18 ? "Yes" : "No";
-        console.log(canVote);
-        // Core Concepts of Boolean Logic
-        let a = true;
-        let b = false;
-        console.log(a && b);
-        console.log(a || b);
-        console.log(!a, !b);
-        // Truthy and Falsy
-        let value1 = "";
-        let value2 = "Hello";
-        console.log(Boolean(value1));
-        console.log(Boolean(value2));
-        // Conditional statements
-        let isRaining = true;
-        if (isRaining) {
-            console.log("Take an umbrella");
+        // Practice conditional statements
+        var age = 70;
+        if (age >= 65) {
+            console.log("You get your income from your pension");
+        } else if (age < 65 && age >= 18) {
+            console.log("Each month you get a salary");
+        } else if (age < 18) {
+            console.log("You get an allowance");
         } else {
-            console.log("Enjoy the sunshine");
+            console.log("The value of the age variable is not numerical");
         }
+        // Code the days of the week program as a switch statement
+        var day = "Moonday";  // You can change this to any day of the week!
+
+        switch (day) {
+            case "Monday":
+                console.log("Ugh, Monday again! Time to start the week strong. 💪");
+                break;
+            case "Tuesday":
+                console.log("It's Tuesday! Let's keep the momentum going. 🚀");
+                break;
+            case "Wednesday":
+                console.log("Ah, Wednesday! Halfway through the week, let's power through! 🏃‍♂️");
+                break;
+            case "Thursday":
+                console.log("It's Thursday! Almost there... let's finish strong! 🔥");
+                break;
+            case "Friday":
+                console.log("It's Friday! Time to celebrate the weekend almost being here! 🎉");
+                break;
+            case "Saturday":
+                console.log("Saturday vibes! Time to relax and enjoy. 🌴");
+                break;
+            case "Sunday":
+                console.log("Ah, Sunday! Take a well-deserved rest and recharge for the week ahead. 😌");
+                break;
+            default:
+                console.log("Huh, that’s not a valid day. Did you invent a new day? 🤔");
+                break;
+        }
+
     </script>
 </body>
 
