@@ -176,10 +176,68 @@
         }
         addNums("1", 2);
         console.log("Still running");
-        console.log(typeof(addNums("1", 2)));
+        console.log(typeof (addNums("1", 2)));
         var result = addNums("1", 2);
-        console.log(typeof(result));
+        console.log(typeof (result));
         // Error prevention
+        function addTwoNums(a, b) {
+            try {
+                console.log(a + b);
+            } catch (error) {
+                console.error();
+            }
+        }
+        addTwoNums("5", 5);
+        // Second version
+        function addTwoNumbers(a, b) {
+            try {
+                // Convert a to a number before adding
+                console.log(+a + b);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        addTwoNumbers("5", 5);
+
+        // 
+        function addTwoMoreNumbers(a, b) {
+            try {
+                // Check if the first argument is not a number
+                if (typeof a !== 'number') {
+                    throw new ReferenceError('The first argument is not a number');
+                }
+                // Check if the second argument is not a number
+                else if (typeof b !== 'number') {
+                    throw new ReferenceError('The second argument is not a number');
+                }
+                // If both arguments are numbers, perform the addition
+                else {
+                    console.log(a + b);
+                }
+            } catch (error) {
+                // Catch any errors and log them
+                console.log(error);
+            }
+        }
+
+        // Test the function with two string arguments
+        addTwoMoreNumbers("5", "5");  // Will throw an error because both are strings
+        addTwoMoreNumbers(5, 5);
+
+        // Defensive programming
+        function letterFinderFunction(word, match) {
+            for (var i = 0; i < word.length; i++) {
+                if (word[i] == match) {
+                    // If the current character at position i in the word is equal to the match
+                    console.log("Found the ", match, "at", i);
+                } else {
+                    console.log('---No match found at', i);
+                }
+            }
+        }
+        letterFinderFunction("Alok", "o");
+        letterFinderFunction("Alok", "k");
+
     </script>
 </body>
 
