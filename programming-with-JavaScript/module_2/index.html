@@ -50,7 +50,79 @@
                 console.log({ [key]: storeManager[key] });
             }
         }
-       
+        //    Object Literals and the Dot Notation
+        // Create an object
+        var user = {
+
+        };
+        //creating an object with properties and their values
+        var assistantManager = {
+            rangeTilesPerTurn: 3,
+            socialSkills: 30,
+            streetSmarts: 30,
+            health: 40,
+            specialAbility: "young and ambitious",
+            greeting: "Let's make some money"
+        };
+        // Here is a table object
+        var table = {
+            legs: 3,
+            color: "brown",
+            priceUSD: 100,
+        };
+        console.log(table);
+        /*
+        An alternative approach of building objects is to first save an empty object literal to a variable, then use the dot notation to declare new properties on the fly, and use the assignment operator to add values to those properties; for example:
+        */
+        var house2 = {};
+        house2.rooms = 4;
+        house2.color = "pink";
+        house2.priceUSD = 12345;
+        console.log(house2);
+        //    Object Literals and the Brackets Notation
+        var house3 = {};
+        house3["rooms"] = 6;
+        house3["color"] = "White";
+        house3["priceUSD"] = 65432;
+        console.log(house3);
+        // I can both access and update properties on objects using either the dot notation, or the brackets notation, or a combination of both, like in the following example:
+        var car = {};
+        car.color = "red";
+        car["color"] = "green";
+        car["speed"] = 200;
+        car.speed = 100;
+        console.log(car);
+        // With the brackets notation, I can add space characters inside property names, like this:  
+        car["number of doors"] = 4;
+        console.log(car);
+        car.numberOfDoors = 2;
+        console.log(car);
+        // Array of keys
+        var arrOfKeys = ["speed", "altitude", "color"];
+        var drone = {
+            speed: 100,
+            altitude: 200,
+            color: "red"
+        }
+        for (var i = 0; i < arrOfKeys.length; i++) {
+            console.log(drone[arrOfKeys[i]]);
+        }
+        // Arrays are Objects
+        var fruits = [];
+        fruits.push("apple");
+        fruits.push("pear");
+        console.log(fruits);
+        // Array builder function
+        function arrayBuilder(one, two, three) {
+            var array = [];
+            array.push(one);
+            array.push(two);
+            array.push(three);
+            return array;
+        }
+        // Additionally, I can save this function call to a variable. 
+        var simpleArray = arrayBuilder("Apple", "Cider", "Vinegar");
+        console.log(simpleArray);
     </script>
 </body>
 
