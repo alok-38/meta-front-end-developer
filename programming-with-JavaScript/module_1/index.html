@@ -102,6 +102,25 @@
             console.log(year);
             year++;
         }
+        // Nested loops
+        for (let boxCounter = 0; boxCounter < 3; boxCounter++) {
+            for (let smallBoxCounter = 0; smallBoxCounter < 2; smallBoxCounter++) {
+                console.log("Toy");
+            }
+        }
+        // Working with Multidimensional Arrays (Grids, Matrices)
+        let grid = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        let totalSum = 0;
+        for (let row = 0; row < grid.length; row++) {
+            for (let col = 0; col < grid[row].length; col++) {
+                totalSum += grid[row][col];
+            }
+        }
+        console.log(totalSum);
     </script>
 </body>
 
