@@ -21,6 +21,36 @@
         }
         var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
         listOfArrayItems(colors);
+
+
+        function letterFinder(word, match) {
+            // Loop through each character in the word
+            for (let index = 0; index < word.length; index++) {
+                // Check if the current character matches the 'match' character
+                if (word[index] === match) {
+                    // Return the index if a match is found
+                    return index;
+                }
+            }
+            // If no match is found
+            return -1;
+        }
+        console.log(letterFinder("hello", "e")); // Output: 1
+        console.log(letterFinder("hello", "z")); // Output: -1
+        // Objects
+        var storeManager = {
+            movement: 4,
+            socialSkills: 50,
+            streetSmarts: 50,
+            health: 30
+        }
+        // Looping through the keys of the object
+        for (let key in storeManager) {
+            if (storeManager.hasOwnProperty(key)) {
+                console.log({ [key]: storeManager[key] });
+            }
+        }
+       
     </script>
 </body>
 
