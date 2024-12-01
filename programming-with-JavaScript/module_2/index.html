@@ -170,6 +170,16 @@
         console.log(goodCar);
         goodCar.turnTheKey();
         goodCar.lightsOn();
+        // Bugs and errors
+        function addNums(a, b) {
+            console.log(a + b);
+        }
+        addNums("1", 2);
+        console.log("Still running");
+        console.log(typeof(addNums("1", 2)));
+        var result = addNums("1", 2);
+        console.log(typeof(result));
+        // Error prevention
     </script>
 </body>
 
