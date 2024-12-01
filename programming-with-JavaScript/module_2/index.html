@@ -123,6 +123,53 @@
         // Additionally, I can save this function call to a variable. 
         var simpleArray = arrayBuilder("Apple", "Cider", "Vinegar");
         console.log(simpleArray);
+        // Math object
+        console.log(Math.random());
+        var decimal = Math.random();
+        console.log(decimal * 10);
+        // Ceil method
+        var rounded = Math.ceil(0.0001);
+        console.log(rounded);
+        var rounded = Math.ceil(0.5);
+        // Creating arrays and objects
+        var clothes = [];
+        clothes.push("Jacket");
+        clothes.push("Jeans");
+        clothes.push("Boots");
+        clothes.push("Belt");
+        clothes.push("Socks");
+        console.table(clothes);
+        var favCar = {};
+        favCar.color = "Red";
+        favCar.covertible = true;
+        console.log(favCar);
+        // Object Methods
+        var myCar = {};
+        myCar.color = "Yellow";
+        //add a method to the car object so that it can be called as car.turnkey()
+        myCar.turnKey = function () {
+            console.log("Engine running");
+        }
+        myCar.turnKey();
+        // Let's explore this further now. I will create an object using something known as the constructor function.
+        var mySecondCar = {};
+        mySecondCar.mileage = 987456;
+        mySecondCar.color = "Blue";
+        console.log(mySecondCar);
+        //example of adding properties and methods to an object
+        var goodCar = {};
+        goodCar.mileage = 123456;
+        goodCar.color = "Orange";
+        console.log(goodCar);
+        goodCar.turnTheKey = function () {
+            console.log("The engine is running");
+        }
+        goodCar.lightsOn = function () {
+            console.log("The lights are one");
+        }
+        console.log(goodCar);
+        goodCar.turnTheKey();
+        goodCar.lightsOn();
     </script>
 </body>
 
