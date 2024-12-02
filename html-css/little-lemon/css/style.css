@@ -17,3 +17,43 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+header img {
+    width: 50%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 15%;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
