@@ -1,5 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 1.5rem;
 }
 
 header {
@@ -21,8 +22,86 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 25px;
+    margin-top: 225px;
 }
 
 ul a {
     text-decoration: none;
+    background-color: rgb(153, 45, 14);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* Section banner */
+.banner {
+    background-image: url('../images/header.jpg');
+    height: 250px;
+    margin-top: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 25px;
+    position: relative;
+    /* This is needed for z-index to work */
+}
+
+.banner h1 {
+    color: rgb(153, 45, 14);
+    padding: 2rem;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
+    /* Ensure the z-index works */
+    z-index: 2;
+    /* Ensure the text is above the background */
+}
+
+.banner p {
+    margin: 0;
+    color: rgb(153, 45, 14);
+    width: 70%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
+    /* Ensure the z-index works */
+    z-index: 2;
+    /* Ensure the text is above the background */
+}
+
+/* main and article */
+
+main {
+    display: flex;
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+article {
+    background-color: bisque;
+    flex: 1;
+}
+
+article img {
+    width: 50%;
+    object-fit: cover;
+    height: 177px;
+}
+
+article p {
+    width: 55%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+footer div img {
+    width: 15%;
 }
