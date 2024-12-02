@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     margin: 1.5rem;
+    background-color: rgb(169, 169, 117);
 }
 
 header {
@@ -37,7 +44,7 @@ ul a {
 /* Section banner */
 .banner {
     background-image: url('../images/header.jpg');
-    height: 250px;
+    height: 300x;
     margin-top: 2rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,30 +85,126 @@ main {
     display: flex;
     gap: 30px;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 article {
     background-color: bisque;
-    flex: 1;
+    width: 30%;
+    border-radius: 25px;
+    height: 550px;
+    margin: auto;
 }
 
 article img {
-    width: 50%;
+    width: 90%;
     object-fit: cover;
     height: 177px;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
 article p {
-    width: 55%;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    line-height: 1.6;
+}
+
+article a {
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: rgb(153, 45, 14);
+}
+
+article h2 {
+    color: rgb(153, 45, 14);
+    font-size: 2rem;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+table {
+    margin-left: 2rem;
+    line-height: 1.6;
 }
 
 /* footer */
 footer {
     display: flex;
-    margin-top: 2rem;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-footer div img {
-    width: 15%;
+footer p {
+    color: rgb(153, 45, 14);
+}
+
+footer img {
+    width: 10%;
+}
+
+/* Tablet Styles */
+@media (max-width: 840px) {
+    header {
+        display: none;
+    }
+
+    section.banner {
+        padding: 35px;
+    }
+
+    section.banner p {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main article {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        display: none;
+    }
+
+    section.banner {
+        padding: 35px;
+    }
+
+    section.banner p {
+        display: none;
+    }
+
+    header nav ul {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section.banner {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
