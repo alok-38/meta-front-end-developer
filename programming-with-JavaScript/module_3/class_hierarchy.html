@@ -28,6 +28,21 @@
         // Calling methods
         dog.speak();
         cat.speak();
+
+        // Inheritance
+        class Dog extends Animal {
+            constructor(name, sound, breed) {
+                // Call parent constructor
+                super(name, sound);
+                this.breed = breed;
+            }
+            // Overriding method
+            speak() {
+                console.log(`${this.name} the ${this.breed} says ${this.sound}`);
+            }
+        }
+        const myDog = new Dog('Buddy', 'Woof', 'Golden Retriever');
+        myDog.speak();
     </script>
 </body>
 
