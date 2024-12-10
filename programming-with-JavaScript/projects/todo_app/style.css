@@ -57,6 +57,11 @@ h2 {
     width: 450px;
     outline: none;
     border: 1px solid #78c1f3;
+    padding-left: 15px;
+    font-size: 24px;
+    color: rgb(63, 61, 61);
+    box-sizing: border-box;
+    font-weight: 100;
 }
 
 .input button {
@@ -86,7 +91,8 @@ main {
 
 .input input::placeholder {
     padding-left: 15px;
-    color: #2fa4f1;
+    color: #abdafa;
+    font-weight: 100;
 }
 
 .input input:focus,
@@ -101,4 +107,24 @@ main {
     /* Scale the button slightly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     /* Add a shadow when clicked */
+}
+
+/* Dunamically created para */
+p {
+    color: #2fa4f1;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section li {
+    margin-bottom: 15px;
+    background-color: #abdafa;
+    padding: 15px 25px;
+    width: 100%;
 }
