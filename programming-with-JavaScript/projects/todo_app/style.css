@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #333;
 }
 
 img {
@@ -59,9 +60,13 @@ h2 {
     border: 1px solid #78c1f3;
     padding-left: 15px;
     font-size: 24px;
-    color: rgb(63, 61, 61);
+    color: #333;
     box-sizing: border-box;
     font-weight: 100;
+}
+
+.input input::placeholder {
+    color: #6c757d;
 }
 
 .input button {
@@ -69,7 +74,7 @@ h2 {
     margin-left: 5px;
     outline: none;
     border: none;
-    background-color: #78c1f3;
+    background-color: #007bff;
     color: #ffffff;
     font-size: 32px;
     font-weight: 600;
@@ -78,8 +83,13 @@ h2 {
 
 .input button:hover,
 .input button:focus {
-    background-color: #5fb6f0;
+    background-color: #0056b3;
     color: #ffffff;
+}
+
+.input button:active {
+    transform: scale(0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -89,42 +99,65 @@ main {
     border-radius: 10px;
 }
 
-.input input::placeholder {
-    padding-left: 15px;
-    color: #abdafa;
-    font-weight: 100;
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.input input:focus,
-.input input:hover,
-.input button:focus,
-.input button:hover {
-    border: 2px solid #2fa4f1;
+.task-container {
+    width: 100%;
 }
 
-.input button:active {
-    transform: scale(0.9);
-    /* Scale the button slightly */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Add a shadow when clicked */
+.task-container .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    color: #333;
+    border-radius: 5px;
 }
 
-/* Dunamically created para */
-p {
-    color: #2fa4f1;
+.edit-btn,
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.para {
     text-align: center;
-    margin-top: 15px;
+    margin: 15px 0 15px 0;
+    color: #333;
     font-weight: 600;
-    margin-bottom: 15px;
 }
 
-section ul {
+ul {
     list-style-type: none;
 }
 
-section li {
+ul li {
     margin-bottom: 15px;
-    background-color: #abdafa;
-    padding: 15px 25px;
-    width: 100%;
+    font-size: 24px;
+    color: #333;
+    background-color: #d9e9f4;
+    padding: 10px 35px;
+    opacity: .8;
 }
