@@ -31,3 +31,18 @@ const colors = {
     salmon: "#FA8072"
 };
 
+const circleEl = document.querySelector('.circle');
+const buttonEl = document.querySelector('button');
+
+const changeColor = () => {
+    // Get the keys
+    const colorKeys = Object.keys(colors);
+    // Random color name
+    const randomKey = colorKeys[Math.floor(Math.random() * colorKeys.length)];
+    // Get the hex code
+    const randomColorHex = colors[randomKey];
+    // Apply the color to the circleEl
+    circleEl.style.backgroundColor = randomColorHex;
+}
+
+buttonEl.addEventListener('click', changeColor);
