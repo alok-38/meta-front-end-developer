@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience and Attitude Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Adjust Your Experience and Attitude</h1>
+
+        <!-- Experience Slider -->
+        <div class="slider-container">
+            <label for="experience">Experience Level:</label>
+            <input type="range" id="experience" name="experience" min="0" max="100" value="50">
+            <span id="experienceValue">50</span>
+        </div>
+
+        <!-- Attitude Slider -->
+        <div class="slider-container">
+            <label for="attitude">Attitude Level:</label>
+            <input type="range" id="attitude" name="attitude" min="0" max="100" value="50">
+            <span id="attitudeValue">50</span>
+        </div>
+
+        <!-- Suggested Actions -->
+        <div id="suggestion">
+            <p>Suggested Action: </p>
+            <p id="actionText">Adjust the sliders to see suggestions here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
