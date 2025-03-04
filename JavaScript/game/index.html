@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play game</title>
+</head>
+
+<body>
+    <script>
+        let playGame = confirm("Shall we play, rock, paper, or scissors?");
+        if (playGame) {
+            // play
+            let playerChoice = prompt("Please enter rock, paper or scissors").trim().toLowerCase();
+
+            if (playerChoice) {
+                if (playerChoice === 'rock' || playerChoice === 'paper' || playerChoice === 'scissors') {
+                    // Generate a random choice for the computer
+                    let choices = ['rock', 'paper', 'scissors'];
+                    let computerChoice = choices[Math.floor(Math.random() * 3)];
+
+                    // Compare choices
+                    let result;
+                    if (playerChoice === computerChoice) {
+                        result = "It's a tie!";
+                    } else if (
+                        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+                        (playerChoice === 'paper' && computerChoice === 'rock') ||
+                        (playerChoice === 'scissors' && computerChoice === 'paper')
+                    ) {
+                        result = "You win!";
+                    } else {
+                        result = "You lose!";
+                    }
+
+                    // Show the result
+                    alert("You chose " + playerChoice + ". The computer chose " + computerChoice + ". " + result);
+                } else {
+                    alert("You did not enter rock, paper or scissors!");
+                }
+            } else {
+                alert("I guess you changed your mind. Maybe next time!");
+            }
+        } else {
+            alert("Ok, maybe next time!");
+        }
+    </script>
+</body>
+
+</html>

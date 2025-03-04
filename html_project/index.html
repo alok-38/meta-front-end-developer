@@ -3,33 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tacos Restaurant</title>
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="The official website for The Little Taco Shop">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <h1>Welcome to The Little Taco Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="img/tacos_and_drink_400x267.png" alt="Tacos and a Drink" title="We love tacos!" width="400"
+                height="267">
+            <figcaption>
+                Tacos and a Drink
+            </figcaption>
+        </figure>
+    </header>
     <main>
-        <header>
-            <h1>Welcome to The Little Taco Shop</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">About LTS</a></li>
-                    <li><a href="#">Our Menu</a></li>
-                    <li><a href="#">Store Hours</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <figure>
-                <img src="img/tacos_and_drink_400x267.png" alt="tacos and a drink">
-                <figcaption>Tacos and a drink</figcaption>
-            </figure>
-        </header>
-        <article>
-            <h2>About LTS</h2>
-            <p>LTS was founded in 2022. Our shop was built from a <strong>love of tacos</strong>
-                🌮🌮🌮. We hope our shop adds a unique and interesting place to our little town.</p>
+        <article id="about">
+            <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
+            <p>
+                <abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop
+                was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a unique and interesting
+                place to our little town.
+            </p>
             <aside>
                 <h3>Taco Trivia</h3>
                 <details>
@@ -43,9 +59,8 @@
                     </p>
                 </details>
             </aside>
-
         </article>
-        <section>
+        <article id="menu">
             <h2>Our Menu</h2>
             <table>
                 <caption>Our Tacos</caption>
@@ -100,7 +115,7 @@
             <p>
                 <a href="#">Back To Top</a>
             </p>
-        </section>
+        </article>
     </main>
     <footer>
         <p>Copyright &copy; The Little Taco Shop</p>
