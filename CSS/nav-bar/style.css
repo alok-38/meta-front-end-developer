@@ -10,13 +10,30 @@ nav {
     justify-content: space-between;
     height: 65px;
     align-items: center;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 ul {
     padding: 0;
     list-style-type: none;
     display: flex;
+    gap: 15px;
+}
+
+ul li {
+    margin-left: 15px;
+}
+
+ul li a {
+    font-weight: 600;
+    font-size: 18px;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+}
+
+ul li a:hover {
+    background-color: #FCBA28;
+    color: #Ffffff;
 }
 
 a {
@@ -26,4 +43,19 @@ a {
 
 span {
     color: #F9F4DA;
+    background-color: #231F20;
+    opacity: 1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+span:hover {
+    color: #FCBA28;
+    cursor: pointer;
+    border: 2px solid #F9F4DA;
 }
