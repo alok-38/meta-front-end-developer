@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 *,
 *::before,
 *::after {
@@ -15,19 +14,12 @@
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.5;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    font-family: inherit;
-}
-
-/* Applying the grid system */
+/* Set the body to use flexbox to push footer down */
 main {
     display: grid;
     grid-template-columns: 70% 1fr 2fr auto 12%;
@@ -36,14 +28,26 @@ main {
         "header header header header header"
         "nav main main aside aside"
         "footer footer footer footer footer";
+    flex: 1;
+    /* This ensures main takes up available space */
 }
 
 header {
     grid-area: header;
+    padding: 2.5rem;
+    text-align: center;
 }
 
 nav {
     grid-area: nav;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
 }
 
 main {
@@ -56,5 +60,5 @@ aside {
 
 footer {
     grid-area: footer;
+    margin: auto;
 }
-
